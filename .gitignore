@@ -1,0 +1,15 @@
+MDK-ARM/Objects
+MDK-ARM/Listings
+MDK-ARM/DebugConfig
+MDK-ARM/debug
+
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.scvd
+MDK-ARM/JLink*
+MDK-ARM/JLinkLog.txt
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+EmbeddedProject1/VisualGDB
+EmbeddedProject1/.VisualGDB
+EmbeddedProject1/*.vcxproj.user

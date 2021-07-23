@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{ea2734ff-752f-44df-9b51-08b0c99bff52}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{063d74ed-7417-4989-93b8-6753aa9ac822}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{c157ef3a-a66a-4e59-b63d-eb7413114dd5}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\bsp_common">
+      <UniqueIdentifier>{139d7053-300b-4cd9-afdf-cac199dfad99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\arm">
+      <UniqueIdentifier>{9fbcf0e4-bf7a-4d38-b890-a99687284f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\drivers">
+      <UniqueIdentifier>{b2995662-fe5c-4542-b087-d101f2350b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libc">
+      <UniqueIdentifier>{0a6e6aa5-46db-4055-8926-942b69a5026a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\service">
+      <UniqueIdentifier>{35e371ff-5e93-4320-9ad8-000421742cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\util">
+      <UniqueIdentifier>{abace525-608d-498a-8ed5-b59b4aa2b437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\soc">
+      <UniqueIdentifier>{0368aca8-815b-43b3-bc62-01ac2ca59fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\startup">
+      <UniqueIdentifier>{a79bd922-f41b-44bc-b0ef-cb506265ca4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\user_code">
+      <UniqueIdentifier>{a946999c-ac3e-4c3b-b1d3-34a845c89d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\user_config">
+      <UniqueIdentifier>{01ad19ee-0870-41f5-9e0b-2f5f6e9fd879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{b1d8a7af-0ee4-42d3-b6e9-c6835bc3da24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\bsp_common">
+      <UniqueIdentifier>{e497be10-679c-4a83-aca8-109dee0096a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\arm">
+      <UniqueIdentifier>{e738d62b-ae9b-46c3-bbcd-78c082af6594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\drivers">
+      <UniqueIdentifier>{08ffaf71-d779-421b-92df-46a2895ff85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libc">
+      <UniqueIdentifier>{827539b3-4e13-4f4e-9345-f685b370d44e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\service">
+      <UniqueIdentifier>{f26ee720-8c1f-4d28-90af-f8fffb700fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\util">
+      <UniqueIdentifier>{8e8c0e5f-62ba-41f3-a2ba-fc0b875f196d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\soc">
+      <UniqueIdentifier>{8c752ec5-c353-4a0c-8057-7cd70557651b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\startup">
+      <UniqueIdentifier>{a4c9819b-8cb8-4760-a132-383f73b1c940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\user_code">
+      <UniqueIdentifier>{2e71bc57-f749-44e7-9bf6-1245fc744309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\user_config">
+      <UniqueIdentifier>{3a496f21-c3c9-41e7-b3b5-e56fb5496817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{e446c75e-1281-488e-912b-2f90a64e7e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{1fdc3bb5-8c18-405b-91e0-c54c09b974bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_armlib.c">
+      <Filter>Source files\bsp_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_microlib.c">
+      <Filter>Source files\bsp_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_delay_timer.c">
+      <Filter>Source files\bsp_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_system_heap.c">
+      <Filter>Source files\bsp_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_isr_defer_pendsv.c">
+      <Filter>Source files\bsp_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\arch\arm\source\am_arm_nvic.c">
+      <Filter>Source files\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\arch\arm\source\am_arm_systick.c">
+      <Filter>Source files\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\adc\am_cs1237.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\ble\am_zlg9021.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\buzzer\am_buzzer_pwm.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\com\am_digitron_com_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\seg\am_digitron_seg_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\seg\am_digitron_seg_hc595.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\am_digitron_scan_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\am_digitron_scan_hc595_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron_key\am_zlg72128_std.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\fingerprint\am_ts10x.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\flash\am_mx25xx.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\hc595\am_hc595_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\hc595\am_hc595_spi.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\i2c\am_i2c_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_matrix_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_matrix_prepare_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_matrix_read_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\led\am_led_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\led\am_led_hc595.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\miniport\am_miniport_view_key.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\miniport\am_miniport_view_key_595.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\nvram\am_ep24cxx.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_ds1302.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_pcf85063.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_rx8025sa.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_rx8025t.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\sht20\am_sht20.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\spi\am_spi_gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\temperature\am_temp_lm75.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\uart\am_sc16is7xx.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\zigbee\am_zm516x.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\zlg600\am_zlg600.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\lcd\am_ili9341.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\lcd\am_ili9341_intfc_3wire.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron_key\zlg72128.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\drivers\source\digitron_key\zlg72128_platform.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\libc\armlib_adapter\source\am_armlib_adapter.c">
+      <Filter>Source files\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\libc\microlib_adapter\source\am_microlib_adapter.c">
+      <Filter>Source files\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_adc.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_buzzer_dev.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_event_category_input.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_dac.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_digitron_dev.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_digitron_scan.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_digitron_seg8_ascii.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_event.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_event_input_key.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_ftl.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_i2c.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_i2c_slv_subaddr.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_key_matrix.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_key_matrix_softimer.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_led_dev.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_mtd.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_nvram.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_spi.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_system.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_time.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_timer.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_uart.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\service\source\am_uart_rngbuf.c">
+      <Filter>Source files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_isr_defer.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_jobq.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_koutput.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_kprintf.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_memheap.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_rngbuf.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_snprintf.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_softimer.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_vdebug.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_vfprintf_do.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_vsnprintf.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\components\util\source\am_wait.c">
+      <Filter>Source files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\adc\am_zlg_adc.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\crc\am_zlg_crc.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\dac\am_zlg_dac.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\dma\am_zlg_dma.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\flash\am_zlg_flash.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\i2c\am_zlg_i2c.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\i2c\am_zlg_i2c_slv.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_dma.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_int.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_slv_dma.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\tim\am_zlg_tim_cap.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\tim\am_zlg_tim_pwm.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\tim\am_zlg_tim_timing.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\uart\am_zlg_uart.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\uart\hw\amhw_zlg_uart.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\wdt\am_zlg_iwdg.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\wdt\am_zlg_wwdg.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\rcc\hw\amhw_zlg217_rcc.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\gpio\am_zlg217_gpio.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\pwr\am_zlg217_pwr.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\clk\am_zlg217_clk.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\ili9341\am_zlg_ili9341_3wire_spi.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\rtc\am_zlg217_rtc.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_poll.c">
+      <Filter>Source files\soc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_code\main.c">
+      <Filter>Source files\user_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_prj_config.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_board.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_arm_nvic.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_buzzer_pwm.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_debug_uart.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_key_gpio.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_lcd_ili9341.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_led_gpio.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_lm75.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_ds1302.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_eeprom.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_flash.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_rs485.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_rtc.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_rx8025t.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_595.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_key.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_led.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_view.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_view_key.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_zlg72128.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_system_tick_softimer.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_adc.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_clk.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_crc.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_dac.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_dma.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_gpio.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_i2c.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_i2c_slv.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_iwdg.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_pwr.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_rtc.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_spi_dma.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_spi_int.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_systick.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_tim_cap.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_tim_pwm.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_tim_timing.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_uart.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_wwdg.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_servconf_usrcfg\am_servconf_event_input.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\user_config\am_servconf_usrcfg\am_servconf_nvram.c">
+      <Filter>Source files\user_config</Filter>
+    </ClCompile>
+    <None Include="stm32.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\StartupFiles\startup_stm32f103xe.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\user_config\am_zlg217_inst_init.h">
+      <Filter>Header files\user_config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\user_config\am_prj_config.h">
+      <Filter>Header files\user_config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\user_config\am_board.h">
+      <Filter>Header files\user_config</Filter>
+    </ClInclude>
+    <None Include="EmbeddedProject1-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="EmbeddedProject1-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

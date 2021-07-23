@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{DFD5E012-B382-4A2A-82C3-9894D461BA7D}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>2021.02</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\user_code;..\user_config;..\user_config\am_hwconf_usrcfg;..\user_config\am_servconf_usrcfg;..\ametal\3rdparty\CMSIS\Include;..\ametal\arch\arm\include;..\ametal\board\bsp_common\include;..\ametal\components\drivers\include;..\ametal\components\service\include;..\ametal\components\util\include;..\examples\board\am217_core;..\ametal\examples\components;..\ametal\examples\soc\zlg;..\ametal\examples\std;..\ametal\interface;..\ametal\soc\zlg\zlg217;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\bkp;..\ametal\soc\zlg\drivers\include\bkp\hw;..\ametal\soc\zlg\drivers\include\clk;..\ametal\soc\zlg\drivers\include\cmp;..\ametal\soc\zlg\drivers\include\crc;..\ametal\soc\zlg\drivers\include\dac;..\ametal\soc\zlg\drivers\include\dma;..\ametal\soc\zlg\drivers\include\exti;..\ametal\soc\zlg\drivers\include\flash\hw;..\ametal\soc\zlg\drivers\include\gpio;..\ametal\soc\zlg\drivers\include\i2c;..\ametal\soc\zlg\drivers\include\pwr;..\ametal\soc\zlg\drivers\include\rcc;..\ametal\soc\zlg\drivers\include\spi;..\ametal\soc\zlg\drivers\include\syscfg\hw;..\ametal\soc\zlg\drivers\include\tim;..\ametal\soc\zlg\drivers\include\uart;..\ametal\soc\zlg\drivers\include\wdt;..\ametal\soc\zlg\drivers\include\gpio\hw;..\ametal\soc\zlg\drivers\include\pwr\hw;..\ametal\soc\zlg\drivers\include\rtc\hw;..\ametal\soc\zlg\drivers\include\afio\hw;..\ametal\soc\zlg\drivers\include\rcc\hw;..\ametal\soc\zlg\drivers\include\exti\hw;..\ametal\soc\zlg\drivers\include\adc\hw;..\ametal\soc\zlg\drivers\include\uart\hw;..\ametal\soc\zlg\drivers\include\flash;..\ametal\soc\zlg\drivers\include\crc\hw;..\ametal\soc\zlg\drivers\include\dac\hw;..\ametal\soc\zlg\drivers\include\dma\hw;..\ametal\soc\zlg\drivers\include\i2c\hw;..\ametal\soc\zlg\drivers\include\wdt\hw;..\ametal\soc\zlg\drivers\include\spi\hw;..\ametal\soc\zlg\drivers\include\tim\hw;..\ametal\arch\arm\include\hw;..\ametal\soc\zlg\drivers\include\rtc;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\ili9341;..\ametal\components\libc\armlib_adapter\include;..\ametal\components\libc\microlib_adapter\include;..\ametal\soc\zlg\drivers\include\can;..\ametal\soc\zlg\drivers\include\can\hw;..\ametal\soc\zlg\drivers\include\usbd;..\ametal\soc\zlg\drivers\include\usbd\hw;..\ametal\components\usb\device;..\ametal\components\usb\include;..\ametal\components\usb\osa;..\ametal\components\usb\host\config;..\ametal\components\usb\host\common\include;..\ametal\components\usb\host\class\include;..\ametal\components\usb\device\config\include;..\ametal\components\usb\host;..\ametal\soc\zlg\drivers\include\syscfg;..\ametal\components\drivers\source\lcd;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>flash_layout;AM_VDEBUG AM_CORTEX_M3;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\user_code;..\user_config;..\user_config\am_hwconf_usrcfg;..\user_config\am_servconf_usrcfg;..\ametal\3rdparty\CMSIS\Include;..\ametal\arch\arm\include;..\ametal\board\bsp_common\include;..\ametal\components\drivers\include;..\ametal\components\service\include;..\ametal\components\util\include;..\examples\board\am217_core;..\ametal\examples\components;..\ametal\examples\soc\zlg;..\ametal\examples\std;..\ametal\interface;..\ametal\soc\zlg\zlg217;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\bkp;..\ametal\soc\zlg\drivers\include\bkp\hw;..\ametal\soc\zlg\drivers\include\clk;..\ametal\soc\zlg\drivers\include\cmp;..\ametal\soc\zlg\drivers\include\crc;..\ametal\soc\zlg\drivers\include\dac;..\ametal\soc\zlg\drivers\include\dma;..\ametal\soc\zlg\drivers\include\exti;..\ametal\soc\zlg\drivers\include\flash\hw;..\ametal\soc\zlg\drivers\include\gpio;..\ametal\soc\zlg\drivers\include\i2c;..\ametal\soc\zlg\drivers\include\pwr;..\ametal\soc\zlg\drivers\include\rcc;..\ametal\soc\zlg\drivers\include\spi;..\ametal\soc\zlg\drivers\include\syscfg\hw;..\ametal\soc\zlg\drivers\include\tim;..\ametal\soc\zlg\drivers\include\uart;..\ametal\soc\zlg\drivers\include\wdt;..\ametal\soc\zlg\drivers\include\gpio\hw;..\ametal\soc\zlg\drivers\include\pwr\hw;..\ametal\soc\zlg\drivers\include\rtc\hw;..\ametal\soc\zlg\drivers\include\afio\hw;..\ametal\soc\zlg\drivers\include\rcc\hw;..\ametal\soc\zlg\drivers\include\exti\hw;..\ametal\soc\zlg\drivers\include\adc\hw;..\ametal\soc\zlg\drivers\include\uart\hw;..\ametal\soc\zlg\drivers\include\flash;..\ametal\soc\zlg\drivers\include\crc\hw;..\ametal\soc\zlg\drivers\include\dac\hw;..\ametal\soc\zlg\drivers\include\dma\hw;..\ametal\soc\zlg\drivers\include\i2c\hw;..\ametal\soc\zlg\drivers\include\wdt\hw;..\ametal\soc\zlg\drivers\include\spi\hw;..\ametal\soc\zlg\drivers\include\tim\hw;..\ametal\arch\arm\include\hw;..\ametal\soc\zlg\drivers\include\rtc;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\ili9341;..\ametal\components\libc\armlib_adapter\include;..\ametal\components\libc\microlib_adapter\include;..\ametal\soc\zlg\drivers\include\can;..\ametal\soc\zlg\drivers\include\can\hw;..\ametal\soc\zlg\drivers\include\usbd;..\ametal\soc\zlg\drivers\include\usbd\hw;..\ametal\components\usb\device;..\ametal\components\usb\include;..\ametal\components\usb\osa;..\ametal\components\usb\host\config;..\ametal\components\usb\host\common\include;..\ametal\components\usb\host\class\include;..\ametal\components\usb\device\config\include;..\ametal\components\usb\host;..\ametal\soc\zlg\drivers\include\syscfg;..\ametal\components\drivers\source\lcd;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>flash_layout;AM_VDEBUG AM_CORTEX_M3;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_armlib.c" />
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_microlib.c" />
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_delay_timer.c" />
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_system_heap.c" />
+    <ClCompile Include="..\ametal\board\bsp_common\source\am_bsp_isr_defer_pendsv.c" />
+    <ClCompile Include="..\ametal\arch\arm\source\am_arm_nvic.c" />
+    <ClCompile Include="..\ametal\arch\arm\source\am_arm_systick.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\adc\am_cs1237.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\ble\am_zlg9021.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\buzzer\am_buzzer_pwm.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\com\am_digitron_com_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\seg\am_digitron_seg_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\seg\am_digitron_seg_hc595.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\am_digitron_scan_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron\am_digitron_scan_hc595_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron_key\am_zlg72128_std.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\fingerprint\am_ts10x.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\flash\am_mx25xx.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\hc595\am_hc595_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\hc595\am_hc595_spi.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\i2c\am_i2c_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_matrix_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_matrix_prepare_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\key\am_key_matrix_read_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\led\am_led_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\led\am_led_hc595.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\miniport\am_miniport_view_key.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\miniport\am_miniport_view_key_595.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\nvram\am_ep24cxx.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_ds1302.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_pcf85063.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_rx8025sa.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\rtc\am_rx8025t.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\sht20\am_sht20.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\spi\am_spi_gpio.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\temperature\am_temp_lm75.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\uart\am_sc16is7xx.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\zigbee\am_zm516x.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\zlg600\am_zlg600.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\lcd\am_ili9341.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\lcd\am_ili9341_intfc_3wire.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron_key\zlg72128.c" />
+    <ClCompile Include="..\ametal\components\drivers\source\digitron_key\zlg72128_platform.c" />
+    <ClCompile Include="..\ametal\components\libc\armlib_adapter\source\am_armlib_adapter.c" />
+    <ClCompile Include="..\ametal\components\libc\microlib_adapter\source\am_microlib_adapter.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_adc.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_buzzer_dev.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_event_category_input.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_dac.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_digitron_dev.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_digitron_scan.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_digitron_seg8_ascii.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_event.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_event_input_key.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_ftl.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_i2c.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_i2c_slv_subaddr.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_key_matrix.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_key_matrix_softimer.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_led_dev.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_mtd.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_nvram.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_spi.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_system.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_time.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_timer.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_uart.c" />
+    <ClCompile Include="..\ametal\components\service\source\am_uart_rngbuf.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_isr_defer.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_jobq.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_koutput.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_kprintf.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_memheap.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_rngbuf.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_snprintf.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_softimer.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_vdebug.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_vfprintf_do.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_vsnprintf.c" />
+    <ClCompile Include="..\ametal\components\util\source\am_wait.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\adc\am_zlg_adc.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\crc\am_zlg_crc.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\dac\am_zlg_dac.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\dma\am_zlg_dma.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\flash\am_zlg_flash.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\i2c\am_zlg_i2c.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\i2c\am_zlg_i2c_slv.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_dma.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_int.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_slv_dma.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\tim\am_zlg_tim_cap.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\tim\am_zlg_tim_pwm.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\tim\am_zlg_tim_timing.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\uart\am_zlg_uart.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\uart\hw\amhw_zlg_uart.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\wdt\am_zlg_iwdg.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\wdt\am_zlg_wwdg.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\rcc\hw\amhw_zlg217_rcc.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\gpio\am_zlg217_gpio.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\pwr\am_zlg217_pwr.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\clk\am_zlg217_clk.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\ili9341\am_zlg_ili9341_3wire_spi.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\rtc\am_zlg217_rtc.c" />
+    <ClCompile Include="..\ametal\soc\zlg\drivers\source\spi\am_zlg_spi_poll.c" />
+    <ClCompile Include="..\user_code\main.c" />
+    <ClCompile Include="..\user_config\am_prj_config.c" />
+    <ClCompile Include="..\user_config\am_board.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_arm_nvic.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_buzzer_pwm.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_debug_uart.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_key_gpio.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_lcd_ili9341.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_led_gpio.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_lm75.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_ds1302.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_eeprom.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_flash.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_rs485.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_rtc.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_microport_rx8025t.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_595.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_key.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_led.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_view.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_view_key.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_miniport_zlg72128.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_system_tick_softimer.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_adc.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_clk.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_crc.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_dac.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_dma.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_gpio.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_i2c.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_i2c_slv.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_iwdg.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_pwr.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_rtc.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_spi_dma.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_spi_int.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_systick.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_tim_cap.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_tim_pwm.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_tim_timing.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_uart.c" />
+    <ClCompile Include="..\user_config\am_hwconf_usrcfg\am_hwconf_zlg217_wwdg.c" />
+    <ClCompile Include="..\user_config\am_servconf_usrcfg\am_servconf_event_input.c" />
+    <ClCompile Include="..\user_config\am_servconf_usrcfg\am_servconf_nvram.c" />
+    <None Include="stm32.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\StartupFiles\startup_stm32f103xe.c" />
+    <ClInclude Include="..\user_config\am_zlg217_inst_init.h" />
+    <ClInclude Include="..\user_config\am_prj_config.h" />
+    <ClInclude Include="..\user_config\am_board.h" />
+    <None Include="EmbeddedProject1-Debug.vgdbsettings" />
+    <None Include="EmbeddedProject1-Release.vgdbsettings" />
+    <None Include="stm32.xml" />
+  </ItemGroup>
+</Project>

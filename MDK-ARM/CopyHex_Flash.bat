@@ -1,0 +1,1 @@
+copy Objects\output.hex ..\иуб╪нд╪Ч\output(mdk).hex
