@@ -40,8 +40,8 @@
 /** \brief 串口1平台初始化 */
 static void __zlg217_plfm_uart1_init (void)
 {
-    am_gpio_pin_cfg(PIOA_9,  PIOA_9_UART1_TX_REMAP0 | PIOA_9_AF_PP );
-    am_gpio_pin_cfg(PIOA_10, PIOA_10_UART1_RX_REMAP0| PIOA_10_INPUT_FLOAT);
+    am_gpio_pin_cfg(PIOB_6, PIOB_6_UART1_TX_REMAP1 | PIOA_9_AF_PP );
+    am_gpio_pin_cfg(PIOB_7, PIOB_7_UART1_RX_REMAP1 | PIOA_10_INPUT_FLOAT);
 }
 
 /** \brief 解除串口1平台初始化 */
@@ -49,8 +49,8 @@ static void __zlg217_plfm_uart1_deinit (void)
 {
     am_clk_disable(CLK_UART1);
 
-    am_gpio_pin_cfg(PIOA_9, AM_GPIO_INPUT);
-    am_gpio_pin_cfg(PIOA_10,AM_GPIO_INPUT);
+    am_gpio_pin_cfg(PIOB_6, AM_GPIO_INPUT);
+    am_gpio_pin_cfg(PIOB_7,AM_GPIO_INPUT);
 }
 
 /** \brief 串口1设备信息 */
