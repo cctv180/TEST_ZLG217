@@ -26,6 +26,9 @@
 /**
  * \brief 例程入口
  */
+#include "bsp.h"
+#include "amhw_arm_nvic.h"
+
 #include "ametal.h"
 #include "am_board.h"
 #include "am_vdebug.h"
@@ -34,14 +37,15 @@
 
 int am_main (void)
 {
-    AM_DBG_INFO("Start up successful!\r\n");
-
+    bsp_Init();
     /* demo例程入口 */
+    AM_DBG_INFO("\r\nint am_main (void)\r\n");
+    AM_DBG_INFO("cpuid=0x%08X\r\n", AMHW_ARM_SCB->cpuid);
+    AM_DBG_INFO("icsr =0x%08X\r\n", AMHW_ARM_SCB->icsr);
 
-    while (1) {
-
+    while (1)
+    {
         am_led_toggle(LED0);
-
         am_mdelay(1000);
     }
 }

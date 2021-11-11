@@ -13,3 +13,4 @@ MDK-ARM/JLinkLog.txt
 EmbeddedProject1/VisualGDB
 EmbeddedProject1/.VisualGDB
 EmbeddedProject1/*.vcxproj.user
+.vscode

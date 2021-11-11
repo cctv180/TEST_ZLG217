@@ -142,7 +142,7 @@ extern "C" {
  * 值得注意的是，使用标准库时，将耗费系统更多的 FLASH 和 RAM 资源，用户
  * 应谨慎使用
  */
-#define AM_CFG_STDLIB_ENABLE         1
+#define AM_CFG_STDLIB_ENABLE         0
 
 /** @} */
 

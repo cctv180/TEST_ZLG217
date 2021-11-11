@@ -313,7 +313,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>3</Optim>
+            <Optim>4</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>AM_VDEBUG AM_CORTEX_M3</Define>
               <Undefine></Undefine>
-              <IncludePath>..\user_code;..\user_config;..\user_config\am_hwconf_usrcfg;..\user_config\am_servconf_usrcfg;..\ametal\3rdparty\CMSIS\Include;..\ametal\arch\arm\include;..\ametal\board\bsp_common\include;..\ametal\components\drivers\include;..\ametal\components\service\include;..\ametal\components\util\include;..\examples\board\am217_core;..\ametal\examples\components;..\ametal\examples\soc\zlg;..\ametal\examples\std;..\ametal\interface;..\ametal\soc\zlg\zlg217;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\bkp;..\ametal\soc\zlg\drivers\include\bkp\hw;..\ametal\soc\zlg\drivers\include\clk;..\ametal\soc\zlg\drivers\include\cmp;..\ametal\soc\zlg\drivers\include\crc;..\ametal\soc\zlg\drivers\include\dac;..\ametal\soc\zlg\drivers\include\dma;..\ametal\soc\zlg\drivers\include\exti;..\ametal\soc\zlg\drivers\include\flash\hw;..\ametal\soc\zlg\drivers\include\gpio;..\ametal\soc\zlg\drivers\include\i2c;..\ametal\soc\zlg\drivers\include\pwr;..\ametal\soc\zlg\drivers\include\rcc;..\ametal\soc\zlg\drivers\include\spi;..\ametal\soc\zlg\drivers\include\syscfg\hw;..\ametal\soc\zlg\drivers\include\tim;..\ametal\soc\zlg\drivers\include\uart;..\ametal\soc\zlg\drivers\include\wdt;..\ametal\board\bsp_common\include;..\user_config;..\ametal\soc\zlg\drivers\include\gpio\hw;..\ametal\soc\zlg\drivers\include\pwr\hw;..\ametal\soc\zlg\drivers\include\rtc\hw;..\ametal\soc\zlg\drivers\include\afio\hw;..\ametal\soc\zlg\drivers\include\rcc\hw;..\ametal\soc\zlg\drivers\include\exti\hw;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\adc\hw;..\ametal\soc\zlg\drivers\include\uart\hw;..\ametal\soc\zlg\drivers\include\flash;..\ametal\soc\zlg\drivers\include\crc\hw;..\ametal\soc\zlg\drivers\include\dac\hw;..\ametal\soc\zlg\drivers\include\dma\hw;..\ametal\soc\zlg\drivers\include\i2c\hw;..\ametal\soc\zlg\drivers\include\wdt\hw;..\ametal\soc\zlg\drivers\include\spi\hw;..\ametal\soc\zlg\drivers\include\tim\hw;..\ametal\arch\arm\include\hw;..\ametal\soc\zlg\drivers\include\rtc;..\ametal\examples\components;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\ili9341;..\ametal\components\libc\armlib_adapter\include;..\ametal\components\libc\microlib_adapter\include;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\can;..\ametal\soc\zlg\drivers\include\can\hw;..\ametal\soc\zlg\drivers\include\usbd;..\ametal\soc\zlg\drivers\include\usbd\hw;..\ametal\components\usb\device;..\ametal\components\usb\include;..\ametal\components\usb\osa;..\ametal\components\usb\host\config;..\ametal\components\usb\host\common\include;..\ametal\components\usb\host\class\include;..\ametal\components\usb\device\config\include;..\ametal\components\usb\host;..\ametal\soc\zlg\drivers\include\syscfg;..\ametal\components\drivers\source\lcd</IncludePath>
+              <IncludePath>..\user_code;..\user_config;..\user_config\am_hwconf_usrcfg;..\user_config\am_servconf_usrcfg;..\ametal\3rdparty\CMSIS\Include;..\ametal\arch\arm\include;..\ametal\board\bsp_common\include;..\ametal\components\drivers\include;..\ametal\components\service\include;..\ametal\components\util\include;..\ametal\examples\board\am217_core;..\ametal\examples\components;..\ametal\examples\soc\zlg;..\ametal\examples\std;..\ametal\interface;..\ametal\soc\zlg\zlg217;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\bkp;..\ametal\soc\zlg\drivers\include\bkp\hw;..\ametal\soc\zlg\drivers\include\clk;..\ametal\soc\zlg\drivers\include\cmp;..\ametal\soc\zlg\drivers\include\crc;..\ametal\soc\zlg\drivers\include\dac;..\ametal\soc\zlg\drivers\include\dma;..\ametal\soc\zlg\drivers\include\exti;..\ametal\soc\zlg\drivers\include\flash\hw;..\ametal\soc\zlg\drivers\include\gpio;..\ametal\soc\zlg\drivers\include\i2c;..\ametal\soc\zlg\drivers\include\pwr;..\ametal\soc\zlg\drivers\include\rcc;..\ametal\soc\zlg\drivers\include\spi;..\ametal\soc\zlg\drivers\include\syscfg\hw;..\ametal\soc\zlg\drivers\include\tim;..\ametal\soc\zlg\drivers\include\uart;..\ametal\soc\zlg\drivers\include\wdt;..\ametal\board\bsp_common\include;..\user_config;..\ametal\soc\zlg\drivers\include\gpio\hw;..\ametal\soc\zlg\drivers\include\pwr\hw;..\ametal\soc\zlg\drivers\include\rtc\hw;..\ametal\soc\zlg\drivers\include\afio\hw;..\ametal\soc\zlg\drivers\include\rcc\hw;..\ametal\soc\zlg\drivers\include\exti\hw;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\adc\hw;..\ametal\soc\zlg\drivers\include\uart\hw;..\ametal\soc\zlg\drivers\include\flash;..\ametal\soc\zlg\drivers\include\crc\hw;..\ametal\soc\zlg\drivers\include\dac\hw;..\ametal\soc\zlg\drivers\include\dma\hw;..\ametal\soc\zlg\drivers\include\i2c\hw;..\ametal\soc\zlg\drivers\include\wdt\hw;..\ametal\soc\zlg\drivers\include\spi\hw;..\ametal\soc\zlg\drivers\include\tim\hw;..\ametal\arch\arm\include\hw;..\ametal\soc\zlg\drivers\include\rtc;..\ametal\examples\components;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\ili9341;..\ametal\components\libc\armlib_adapter\include;..\ametal\components\libc\microlib_adapter\include;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\can;..\ametal\soc\zlg\drivers\include\can\hw;..\ametal\soc\zlg\drivers\include\usbd;..\ametal\soc\zlg\drivers\include\usbd\hw;..\ametal\components\usb\device;..\ametal\components\usb\include;..\ametal\components\usb\osa;..\ametal\soc\zlg\drivers\include\syscfg;..\ametal\components\drivers\source\lcd;..\user_bsp;..\user_bsp\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1200,6 +1200,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>user_bsp</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_bsp\bsp.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_adc_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_bsp\src\bsp_adc_dma.c</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
@@ -1213,7 +1228,7 @@
   <LayerInfo>
     <Layers>
       <Layer>
-        <LayName>&lt;Project Info&gt;</LayName>
+        <LayName>project</LayName>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>
