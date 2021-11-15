@@ -1,3 +1,7 @@
 [submodule "ametal"]
 	path = ametal
 	url = https://gitee.com/zlgopen/ametal
+[submodule "FreeRTOS/kernel"]
+	path = FreeRTOS/kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel
+	branch = main

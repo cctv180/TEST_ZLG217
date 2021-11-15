@@ -337,9 +337,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>AM_VDEBUG AM_CORTEX_M3</Define>
+              <Define>AM_VDEBUG AM_CORTEX_M3 AM_USE_FREERTOS</Define>
               <Undefine></Undefine>
-              <IncludePath>..\user_code;..\user_config;..\user_config\am_hwconf_usrcfg;..\user_config\am_servconf_usrcfg;..\ametal\3rdparty\CMSIS\Include;..\ametal\arch\arm\include;..\ametal\board\bsp_common\include;..\ametal\components\drivers\include;..\ametal\components\service\include;..\ametal\components\util\include;..\ametal\examples\board\am217_core;..\ametal\examples\components;..\ametal\examples\soc\zlg;..\ametal\examples\std;..\ametal\interface;..\ametal\soc\zlg\zlg217;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\bkp;..\ametal\soc\zlg\drivers\include\bkp\hw;..\ametal\soc\zlg\drivers\include\clk;..\ametal\soc\zlg\drivers\include\cmp;..\ametal\soc\zlg\drivers\include\crc;..\ametal\soc\zlg\drivers\include\dac;..\ametal\soc\zlg\drivers\include\dma;..\ametal\soc\zlg\drivers\include\exti;..\ametal\soc\zlg\drivers\include\flash\hw;..\ametal\soc\zlg\drivers\include\gpio;..\ametal\soc\zlg\drivers\include\i2c;..\ametal\soc\zlg\drivers\include\pwr;..\ametal\soc\zlg\drivers\include\rcc;..\ametal\soc\zlg\drivers\include\spi;..\ametal\soc\zlg\drivers\include\syscfg\hw;..\ametal\soc\zlg\drivers\include\tim;..\ametal\soc\zlg\drivers\include\uart;..\ametal\soc\zlg\drivers\include\wdt;..\ametal\board\bsp_common\include;..\user_config;..\ametal\soc\zlg\drivers\include\gpio\hw;..\ametal\soc\zlg\drivers\include\pwr\hw;..\ametal\soc\zlg\drivers\include\rtc\hw;..\ametal\soc\zlg\drivers\include\afio\hw;..\ametal\soc\zlg\drivers\include\rcc\hw;..\ametal\soc\zlg\drivers\include\exti\hw;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\adc\hw;..\ametal\soc\zlg\drivers\include\uart\hw;..\ametal\soc\zlg\drivers\include\flash;..\ametal\soc\zlg\drivers\include\crc\hw;..\ametal\soc\zlg\drivers\include\dac\hw;..\ametal\soc\zlg\drivers\include\dma\hw;..\ametal\soc\zlg\drivers\include\i2c\hw;..\ametal\soc\zlg\drivers\include\wdt\hw;..\ametal\soc\zlg\drivers\include\spi\hw;..\ametal\soc\zlg\drivers\include\tim\hw;..\ametal\arch\arm\include\hw;..\ametal\soc\zlg\drivers\include\rtc;..\ametal\examples\components;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\ili9341;..\ametal\components\libc\armlib_adapter\include;..\ametal\components\libc\microlib_adapter\include;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\can;..\ametal\soc\zlg\drivers\include\can\hw;..\ametal\soc\zlg\drivers\include\usbd;..\ametal\soc\zlg\drivers\include\usbd\hw;..\ametal\components\usb\device;..\ametal\components\usb\include;..\ametal\components\usb\osa;..\ametal\soc\zlg\drivers\include\syscfg;..\ametal\components\drivers\source\lcd;..\user_bsp;..\user_bsp\Inc</IncludePath>
+              <IncludePath>..\user_code;..\user_config;..\user_config\am_hwconf_usrcfg;..\user_config\am_servconf_usrcfg;..\ametal\3rdparty\CMSIS\Include;..\ametal\arch\arm\include;..\ametal\board\bsp_common\include;..\ametal\components\drivers\include;..\ametal\components\service\include;..\ametal\components\util\include;..\ametal\examples\board\am217_core;..\ametal\examples\components;..\ametal\examples\soc\zlg;..\ametal\examples\std;..\ametal\interface;..\ametal\soc\zlg\zlg217;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\bkp;..\ametal\soc\zlg\drivers\include\bkp\hw;..\ametal\soc\zlg\drivers\include\clk;..\ametal\soc\zlg\drivers\include\cmp;..\ametal\soc\zlg\drivers\include\crc;..\ametal\soc\zlg\drivers\include\dac;..\ametal\soc\zlg\drivers\include\dma;..\ametal\soc\zlg\drivers\include\exti;..\ametal\soc\zlg\drivers\include\flash\hw;..\ametal\soc\zlg\drivers\include\gpio;..\ametal\soc\zlg\drivers\include\i2c;..\ametal\soc\zlg\drivers\include\pwr;..\ametal\soc\zlg\drivers\include\rcc;..\ametal\soc\zlg\drivers\include\spi;..\ametal\soc\zlg\drivers\include\syscfg\hw;..\ametal\soc\zlg\drivers\include\tim;..\ametal\soc\zlg\drivers\include\uart;..\ametal\soc\zlg\drivers\include\wdt;..\ametal\board\bsp_common\include;..\user_config;..\ametal\soc\zlg\drivers\include\gpio\hw;..\ametal\soc\zlg\drivers\include\pwr\hw;..\ametal\soc\zlg\drivers\include\rtc\hw;..\ametal\soc\zlg\drivers\include\afio\hw;..\ametal\soc\zlg\drivers\include\rcc\hw;..\ametal\soc\zlg\drivers\include\exti\hw;..\ametal\soc\zlg\drivers\include\adc;..\ametal\soc\zlg\drivers\include\adc\hw;..\ametal\soc\zlg\drivers\include\uart\hw;..\ametal\soc\zlg\drivers\include\flash;..\ametal\soc\zlg\drivers\include\crc\hw;..\ametal\soc\zlg\drivers\include\dac\hw;..\ametal\soc\zlg\drivers\include\dma\hw;..\ametal\soc\zlg\drivers\include\i2c\hw;..\ametal\soc\zlg\drivers\include\wdt\hw;..\ametal\soc\zlg\drivers\include\spi\hw;..\ametal\soc\zlg\drivers\include\tim\hw;..\ametal\arch\arm\include\hw;..\ametal\soc\zlg\drivers\include\rtc;..\ametal\examples\components;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\ili9341;..\ametal\components\libc\armlib_adapter\include;..\ametal\components\libc\microlib_adapter\include;..\ametal\components\libc\newlib_adapter\include;..\ametal\soc\zlg\drivers\include\can;..\ametal\soc\zlg\drivers\include\can\hw;..\ametal\soc\zlg\drivers\include\usbd;..\ametal\soc\zlg\drivers\include\usbd\hw;..\ametal\components\usb\device;..\ametal\components\usb\include;..\ametal\components\usb\osa;..\ametal\soc\zlg\drivers\include\syscfg;..\ametal\components\drivers\source\lcd;..\user_bsp;..\user_bsp\Inc;..\FreeRTOS\;..\FreeRTOS\kernel\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1212,6 +1212,66 @@
               <FileName>bsp_adc_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user_bsp\src\bsp_adc_dma.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FreeRTOS/src</GroupName>
+          <Files>
+            <File>
+              <FileName>croutine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\croutine.c</FilePath>
+            </File>
+            <File>
+              <FileName>event_groups.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\event_groups.c</FilePath>
+            </File>
+            <File>
+              <FileName>list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\list.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\queue.c</FilePath>
+            </File>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\tasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>timers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\timers.c</FilePath>
+            </File>
+            <File>
+              <FileName>heap_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\kernel\portable\MemMang\heap_4.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FreeRTOS/port</GroupName>
+          <Files>
+            <File>
+              <FileName>port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\port.c</FilePath>
+            </File>
+            <File>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FreeRTOS\FreeRTOSConfig.h</FilePath>
+            </File>
+            <File>
+              <FileName>portmacro.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FreeRTOS\portmacro.h</FilePath>
             </File>
           </Files>
         </Group>

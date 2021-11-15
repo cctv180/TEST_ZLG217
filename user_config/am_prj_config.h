@@ -90,7 +90,7 @@ extern "C" {
  * 注意，默认的延时函数由 am_delay.c文件实现，如有特别需求，可以自行更新为其它实现方式
  *
  */
-#define AM_CFG_DELAY_ENABLE          1
+#define AM_CFG_DELAY_ENABLE          0
 
 /**
  * \brief 如果为1，则初始化led的相关功能，板上默认有两个LED

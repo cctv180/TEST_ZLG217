@@ -35,6 +35,32 @@
 #include "am_delay.h"
 #include "am_gpio.h"
 
+#include "includes.h"
+
+static TaskHandle_t HandleLed = NULL;
+static TaskHandle_t HandleTask = NULL;
+
+/* 串口输出 */
+static void task_printf(void* p_arg)
+{
+    while (1)
+    {
+        AM_DBG_INFO("task running!\n");
+        vTaskDelay(5000);
+    }
+}
+
+/* LED 闪烁 */
+static void task_led(void* p_arg)
+{
+    while (1)
+    {
+        AM_DBG_INFO("led running!\n");
+        am_led_toggle(LED0);
+        vTaskDelay(1000);
+    }
+}
+
 int am_main (void)
 {
     bsp_Init();
@@ -43,11 +69,22 @@ int am_main (void)
     AM_DBG_INFO("cpuid=0x%08X\r\n", AMHW_ARM_SCB->cpuid);
     AM_DBG_INFO("icsr =0x%08X\r\n", AMHW_ARM_SCB->icsr);
 
-    while (1)
-    {
-        am_led_toggle(LED0);
-        am_mdelay(1000);
-    }
+    xTaskCreate(task_printf,    //任务函数
+        "task_printf",          //任务名称
+        512,                    //任务堆栈大小
+        NULL,                   //传递给任务函数的参数
+        4,                      //任务优先级
+        &HandleTask);           //任务句柄
+
+    xTaskCreate(task_led,       //任务函数
+        "task_led",             //任务名称
+        128,                    //任务堆栈大小
+        NULL,                   //传递给任务函数的参数
+        3,                      //任务优先级
+        &HandleLed);            //任务句柄
+
+    vTaskStartScheduler();      //开启任务调度
+    while (1);
 }
 
 /* end of file */
